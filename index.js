@@ -12,16 +12,50 @@
 'use strict';
 
 function id() {
-    return "Replace This With Your Student ID";
+    return "UP879244";
     // e.g. return "UP654321";
 }
 
 function fn() {
-    return "Replace This With Your First Name";
+    return "Matus";
 }
 
 function sn() {
-    return "Replace This With Your Surname";
+    return "Minarovic";
 }
 
 // add your functions here
+
+function replaceText(element, str){
+    element.textContent = str;
+}
+
+function addTextTo(element, str){
+    element.textContent += str;
+}
+
+function moreBears(){
+    window.animals.src = 'http://placebear.com/400/200';
+    window.animals.alt = 'A bear.';
+    window.animals.title = 'A BEAR!';
+}
+
+function setId(element, str){
+    element.id = str;
+    return element;
+}
+
+function setClass(element, str){
+    element.className = str;
+    return element;
+}
+
+function addAClass(element, str){
+    element.classList.add(str);
+    return element;
+}
+
+function removeAClass(element, str){
+    element.classList.remove(str);
+    return element;
+}
